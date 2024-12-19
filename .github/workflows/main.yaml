@@ -32,7 +32,7 @@ jobs:
         with:
           template: './airgap/eib/edge.yml.j2'
           data: './inventory/example-arm.yml'
-          output: './example-output/airgap/eib/output.yaml'
+          output: './examples-output/airgap/eib/output.yaml'
 
       - name: Show rendered output
         run: cat ./example-output/airgap/eib/output.yaml
