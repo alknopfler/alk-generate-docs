@@ -35,7 +35,7 @@ jobs:
           output_file: './examples-output/airgap/eib/output.yaml'
 
       - name: Show rendered output
-        run: cat ./example-output/airgap/eib/output.yaml
+        run: cat ./examples-output/airgap/eib/output.yaml
 
       # Optional: Commit the rendered output file if needed
       - name: Commit rendered file
