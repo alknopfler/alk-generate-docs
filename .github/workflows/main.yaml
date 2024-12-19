@@ -8,7 +8,7 @@ jobs:
       - name: Setup nginx
         uses: cuchi/jinja2-action@v1.2.2
         with:
-          template: ./airgap/eib/edge.yaml.j2
-          output_file: ./examples-output/airgap/eib/edge.yaml
-          data_file: ./inventory/example-arm.yaml
+          template: ./airgap/eib/edge.yml.j2
+          output_file: ./examples-output/airgap/eib/edge.yml
+          data_file: ./inventory/example-arm.yml
           data_format: yaml
