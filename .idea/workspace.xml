@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ffcf71e-66b1-4b14-927d-cd757a037201" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="7ffcf71e-66b1-4b14-927d-cd757a037201" name="Changes" comment="" />
     <list id="bb1a5960-8e4b-48f9-ab53-58439b3622bc" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

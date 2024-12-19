@@ -28,7 +28,7 @@ jobs:
 
       - name: Render the template using jinja2-action
         id: render_template
-        uses: chenxsan/jinja2-action@v1
+        uses: cuchi/jinja2-action@v1.2.2
         with:
           template: './airgap/eib/edge.yml.j2'
           data: './inventory/example-arm.yml'
