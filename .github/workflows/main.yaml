@@ -30,7 +30,7 @@ jobs:
         id: render_template
         uses: cuchi/jinja2-action@v1.2.2
         with:
-          template: './airgap/eib/edge.yml.j2'
+          template: './airgap/eib/*.j2'
           data_file: './inventory/example-arm.yml'
           output_file: './examples-output/airgap/eib/output.yaml'
 
