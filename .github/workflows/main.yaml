@@ -11,3 +11,4 @@ jobs:
           template: ./airgap/eib/edge.yaml.j2
           output_file: ./examples-output/airgap/eib/edge.yaml
           data_file: ./inventory/example-arm.yaml
+          data_format: yaml
