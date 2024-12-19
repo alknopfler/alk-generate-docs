@@ -1,0 +1,13 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup nginx
+        uses: cuchi/jinja2-action@v1.2.2
+        with:
+          template: airgap/eib/edge.yaml.j2
+          output_file: output/airgap/eib/edge.yaml
+          data_file: inventory/example-arm.yaml
