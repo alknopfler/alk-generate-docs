@@ -1,0 +1,41 @@
+apiVersion: 1.0
+image:
+  imageType: RAW
+  arch: {{ arch }}
+  baseImage: {{ base_image }}
+  outputImageName: {{ output_eib_image }}
+operatingSystem:
+  time:
+    timezone: America/New_York
+  kernelArgs:
+    - ignition.platform.id=openstack
+    - net.ifnames=1
+  systemd:
+    disable:
+      - rebootmgr
+      - transactional-update.timer
+      - transactional-update-cleanup.timer
+      - fstrim
+      - time-sync.target
+  users:
+    - username: root
+      encryptedPassword: ${ROOT_PASSWORD}
+  packages:
+    packageList:
+    {%- if arch == "aarch64" %}
+      - policycoreutils-python-utils
+    {%- endif %}
+      - jq
+      - dpdk
+      - dpdk-tools
+      - libdpdk-23
+      - pf-bb-config
+      - open-iscsi
+      - tuned
+      - cpupower
+      - openssh-server-config-rootlogin
+    {%- if arch == "x86_64" %}
+    additionalRepos:
+      - url: https://download.opensuse.org/repositories/isv:/SUSE:/Edge:/Telco/SL-Micro_6.0_images/
+    {%- endif %}
+    sccRegistrationCode: ${SCC_REGISTRATION_CODE}

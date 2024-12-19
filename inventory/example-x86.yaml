@@ -1,0 +1,5 @@
+arch: x86_64
+base_image: SL-Micro.x86_64-6.1-Base-RT-GM.raw
+output_eib_image: eibimage-slmicro61rt-telco-x86.raw
+
+
