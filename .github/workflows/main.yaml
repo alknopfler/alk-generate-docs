@@ -28,11 +28,10 @@ jobs:
 
       - name: Render the template using jinja2-action
         id: render_template
-        uses: cuchi/jinja2-action@v1.2.2
+        uses: fletort/jinja2-template-action@v1
         with:
-          template: './airgap/eib/*.j2'
+          keep_template: true
           data_file: './inventory/example-arm.yml'
-          output_file: './examples-output/airgap/eib/output.yaml'
 
       - name: Show rendered output
         run: cat ./examples-output/airgap/eib/output.yaml
@@ -42,6 +41,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add ./examples-output/airgap/eib/output.yaml
+          git add .
           git commit -m "Add rendered output"
           git push

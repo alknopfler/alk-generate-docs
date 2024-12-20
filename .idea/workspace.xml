@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ffcf71e-66b1-4b14-927d-cd757a037201" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="bb1a5960-8e4b-48f9-ab53-58439b3622bc" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,8 @@
     "go.sdk.automatically.set": "true",
     "last_opened_file_path": "/Users/alknopfler/projects/src/github.com/alknopfler/alk-generate-docs/inventory",
     "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
 }]]></component>
   <component name="RecentsManager">
